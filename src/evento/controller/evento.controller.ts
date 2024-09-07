@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@nestjs/common';
-import { EventoService } from './evento.service';
-import { CreateEventoDto } from './dto/create-evento.dto';
-import { UpdateEventoDto } from './dto/update-evento.dto';
-import { OrganizadorGuard } from 'src/organizador/organizador.guard';
-import { ParticipanteGuard } from 'src/participante/participante.guard';
+import { OrganizadorGuard } from 'src/commons/guard/organizador.guard';
+import { ParticipanteGuard } from 'src/commons/guard/participante.guard';
+import { EventoService } from '../service/evento.service';
+import { CreateEventoDto } from '../dto/create-evento.dto';
+import { UpdateEventoDto } from '../dto/update-evento.dto';
 
 @Controller('evento')
 export class EventoController {

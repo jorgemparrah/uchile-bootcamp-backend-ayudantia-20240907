@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { UsuarioRegistradoGuard } from './usuario-registrado/usuario-registrado.guard';
-import { UsuarioService } from './usuario/usuario.service';
+import { UsuarioRegistradoGuard } from './commons/guard/usuario-registrado.guard';
+import { UsuarioService } from './usuario/service/usuario.service';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { UsuarioModule } from './usuario/usuario.module';
 import { EventoModule } from './evento/evento.module';

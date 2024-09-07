@@ -1,9 +1,9 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, UseGuards, UsePipes, ValidationPipe } from '@nestjs/common';
-import { AdministradorGuard } from 'src/administrador/administrador.guard';
-import { CreateUsuarioDto } from './dto/create-usuario.dto';
-import { UsuarioService } from './usuario.service';
+import { AdministradorGuard } from 'src/commons/guard/administrador.guard';
+import { CreateUsuarioDto } from '../dto/create-usuario.dto';
+import { UsuarioService } from '../service/usuario.service';
 import { ApiHeader } from '@nestjs/swagger';
-import { UltimoAdministradorPipe } from 'src/ultimo-administrador/ultimo-administrador.pipe';
+import { UltimoAdministradorPipe } from 'src/commons/pipe/ultimo-administrador.pipe';
 
 @UseGuards(AdministradorGuard)
 @Controller('usuario')

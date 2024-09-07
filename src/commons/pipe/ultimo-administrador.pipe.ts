@@ -1,6 +1,6 @@
 import { ArgumentMetadata, BadRequestException, Injectable, PipeTransform } from '@nestjs/common';
 import { Rol } from 'src/usuario/entities/rol.enum';
-import { UsuarioService } from 'src/usuario/usuario.service';
+import { UsuarioService } from 'src/usuario/service/usuario.service';
 
 @Injectable()
 export class UltimoAdministradorPipe implements PipeTransform {

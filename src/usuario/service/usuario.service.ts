@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { CreateUsuarioDto } from './dto/create-usuario.dto';
-import { Rol } from './entities/rol.enum';
-import { Usuario } from './entities/usuario.entity';
+import { CreateUsuarioDto } from '../dto/create-usuario.dto';
+import { Rol } from '../entities/rol.enum';
+import { Usuario } from '../entities/usuario.entity';
 
 @Injectable()
 export class UsuarioService {

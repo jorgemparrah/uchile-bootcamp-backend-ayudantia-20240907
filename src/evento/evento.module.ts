@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { EventoService } from './evento.service';
-import { EventoController } from './evento.controller';
+import { EventoController } from './controller/evento.controller';
+import { EventoService } from './service/evento.service';
 
 @Module({
   controllers: [EventoController],

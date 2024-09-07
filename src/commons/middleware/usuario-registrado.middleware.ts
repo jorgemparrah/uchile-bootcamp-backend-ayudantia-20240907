@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import { UsuarioService } from 'src/usuario/usuario.service';
+import { UsuarioService } from 'src/usuario/service/usuario.service';
 
 @Injectable()
 export class UsuarioRegistradoMiddleware implements NestMiddleware {

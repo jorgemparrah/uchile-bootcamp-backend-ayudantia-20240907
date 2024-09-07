@@ -1,15 +1,13 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { UsuarioModule } from './usuario/usuario.module';
-import { CabeceraMiddleware } from './cabecera/cabecera.middleware';
-import { UsuarioRegistradoMiddleware } from './usuario-registrado/usuario-registrado.middleware';
+import { CabeceraMiddleware } from './commons/middleware/cabecera.middleware';
 import { EventoModule } from './evento/evento.module';
+import { UsuarioRegistradoMiddleware } from './commons/middleware/usuario-registrado.middleware';
+import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [UsuarioModule, EventoModule],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

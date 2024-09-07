@@ -12,7 +12,7 @@ export class UsuarioRegistradoGuard implements CanActivate {
 
     const request = http.getRequest<Request>();
     const response = http.getResponse<Response>();
-    console.log(response);
+    console.log(response.headers);
     const idUsuario = request.headers["x-user-id"];
     console.log("ID de usuario:", idUsuario);
     return true;

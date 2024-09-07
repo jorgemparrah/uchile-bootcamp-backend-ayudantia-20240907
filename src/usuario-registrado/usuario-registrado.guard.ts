@@ -15,6 +15,7 @@ export class UsuarioRegistradoGuard implements CanActivate {
     const encontrado = this.usuarioService.findOne(+idUsuario);
     if (encontrado) {
       console.log("El usuario esta registrado");
+      request["usuarioRegistrado"] = encontrado;
       return true;
     }
     console.log("El usuario NO esta registrado");

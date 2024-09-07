@@ -49,10 +49,6 @@ export class UsuarioService {
     return encontrado;
   }
 
-  update(id: number, updateUsuarioDto: UpdateUsuarioDto) {
-    return `This action updates a #${id} usuario`;
-  }
-
   remove(id: number) {
     return `This action removes a #${id} usuario`;
   }

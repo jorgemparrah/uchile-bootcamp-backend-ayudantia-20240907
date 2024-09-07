@@ -15,7 +15,7 @@ export class CabeceraMiddleware implements NestMiddleware {
     const headerUsuario = req.headers["x-user-id"];
     if (!headerUsuario) {
       console.log("El request no tiene el header x-user-id");
-      res.status(401).send("No autorizado (Falta el header x-user-id)");
+      res.status(428).send("No autorizado (Falta el header x-user-id)");
     } else {
       console.log("El request tiene el header x-user-id");
       next();

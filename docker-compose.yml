@@ -1,0 +1,9 @@
+services:
+  api-v1:
+    image: jorgemparrah/ayudantia:v1
+    ports:
+      - "4000:3000"
+  api-v2:
+    image: jorgemparrah/ayudantia:v2
+    ports:
+      - "8000:3000"

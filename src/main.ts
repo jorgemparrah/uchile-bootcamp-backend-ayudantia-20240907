@@ -8,6 +8,7 @@ import { EventoModule } from './evento/evento.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
   const usuarioService : UsuarioService = app.get(UsuarioService);
   const guard = new UsuarioRegistradoGuard(usuarioService);
   app.useGlobalGuards(guard);

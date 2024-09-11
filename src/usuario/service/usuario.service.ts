@@ -40,7 +40,7 @@ export class UsuarioService {
   }
 
   findAll() {
-    return `This action returns all usuario`;
+    return `This action returns all usuario - v2`;
   }
 
   findOne(id: number) {
